@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    .wrapper {
+        width: 1089px;
+        height: 800px;
+        background-color: antiquewhite;
+        border: solid 4px chocolate;
+    }
+    header {
+        width: 1089px;
+        height: 150px;
+        background-image: url(../Header.PNG);
+        position: relative;
+    }
+    .menu li {
+        display: flex;
+        position: absolute;
+        background-color: aquamarine;
+        left: 100px;
+        font-size: 18px;
+        border-radius: 30px;
+        border: solid 3px rgb(248, 138, 156);
+        text-shadow: 2px 2px #cf3333;
+        list-style-type: none;
+        padding: 10px;
+    }
+    li a {
+        text-decoration: none;
+    }
+    .menu li:nth-child(5) {
+        left: 600px;
+        top: 90px;
+    }
+    .menu li:nth-child(4) {
+        left: 500px;
+        top: 90px;
+    }
+    .menu li:nth-child(3) {
+        left: 400px;
+        top: 90px;
+    }
+    .menu li:nth-child(2) {
+        left: 300px;
+        top: 90px;
+    }
+    .menu li:nth-child(1) {
+        left: 200px;
+        top: 90px;
+    }
+    #frm {
+       position: absolute;
+       left: 800px;
+       top: 30px;
+    }
+    #frm #txtS {
+        border-radius: 30px;
+        padding: 5px;
+        font-style: italic;
+        font-weight: bold;
+    }
+    #frm #btnGo {
+        border-radius: 50px;
+        padding: 5px;
+        font-style: italic;
+        font-weight: bold;
+        background-color: aqua;
+    }
+    span {
+        float: right;
+        width: 200px;
+        height: 100px;
+        line-height: 100px;
+        margin-right: 150px;
+    }
+    section {
+        width: 40%;
+        height: 496px;
+        background-color: burlywood;
+        float: right;
+        border: solid 2px chocolate;
+    }
+    .content {
+        width: 1085px;
+        height: 500px;
+        background-color: aqua;
+        border: solid 4px chocolate;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">HOME 1</a></li>
+                    <li><a href="#">HOME 2</a></li>
+                    <li><a href="#">HOME 3</a></li>
+                    <li><a href="#">HOME 4</a></li>
+                    <li><a href="#">HOME 5</a></li>
+                </ul>
+                <span>
+                    <form action="iuh.edu.vn" method="get" id="frm">
+                        <input type="text" id="txtS" placeholder="search">
+                        <button id="btnGo">Go</button>
+                    </form>
+                </span>
+            </nav>
+        </header>
+    <div class="content">
+        <section>
+            <form action="iuh.edu.vn" method="get">
+                <caption>FROM THÔNG TIN</caption> <br>
+                <fieldset>
+                    <legend>THONG TIN ĐĂNG KÝ</legend>
+                    <label for="mssv">MSSV:</label>
+                    <input type="text" id="mssv" name="mssv"> <br><br>
+                    <label for="name">Họ và tên:</label>
+                    <input type="text" id="name" name="name"> <br><br>
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday"><br><br>
+                    <input type="submit" value="Đăng ký">
+                    <input type="reset" value="Hủy">
+                </fieldset>
+            </form>
+        </section>
+        <aside>
+
+        </aside>
+    </div>
+    </div>
+</body>
+</html>
